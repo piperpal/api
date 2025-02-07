@@ -1,0 +1,7 @@
+<?php
+$db = mysqli_connect("piperpal.mysql.domeneshop.no","piperpal","FiFLHHPxyR7PXUg","piperpal");
+
+$query = "INSERT INTO piperpal (name,location,service,glat,glon) VALUES ('" . $_GET['name'] . "', '" . $_GET['location'] . "', '" . $_GET['service'] . "', " . $_GET['glat'] . "," . $_GET['glon'] . ");";
+
+$result = $db->query($query);
+?>
